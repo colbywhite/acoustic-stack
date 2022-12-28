@@ -66,8 +66,8 @@ export default function Index() {
             Acoustic stack
           </h1>
           <p className="mx-auto mt-6 max-w-xs text-center text-xl text-white sm:max-w-2xl">
-            This is a minimal Remix stack to serve as a starting for demos and
-            debugging.
+            This is a minimal Remix stack to serve as a starting point for demos
+            and debugging.
           </p>
           <p className="mx-auto mt-16 text-center text-white">
             <a href="https://remix.run">

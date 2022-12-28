@@ -2,12 +2,12 @@
 
 ![The Remix Acoustic Stack](/hero-screenshot.png)
 
-This is a minimal Remix stack to serve as a starting for demos and debugging.
+This is a minimal Remix stack to serve as a starting point for demos and debugging. If you need to reproduce a bug in Remix, this stack is a good starting point to do so since it has very little outside of Remix. It's also a good tool if you're trying to demo something Remix-specific.
 
 Learn more about [Remix Stacks](https://remix.run/stacks).
 
 ```
-npx create-remix@latest --template colbywhite/acoustic-stack
+yarn create remix --template colbywhite/acoustic-stack
 ```
 
 ## What's in the stack
@@ -20,7 +20,9 @@ npx create-remix@latest --template colbywhite/acoustic-stack
 
 That's it.
 
-If you need more you can fork this and make it your own. But I recommend using [Plop](https://plopjs.com) to add to this minimal base.
+Tailwind and Vitest aren't Remix-specific concepts, but if you quickly need to spin up a demo, a basic styling tool and a test runner will help. And a linter/formatter keeps the code clean for others to grok.
+
+If you need more you can fork this and make it your own.
 
 ## Development
 
