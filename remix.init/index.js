@@ -20,10 +20,16 @@ async function main({ rootDirectory }) {
 
   const packageJson = await fs.readFile(PACKAGE_JSON_PATH, "utf-8");
 
-  // Parse the package file and rename the application name
+  // remove CHANGELOG
+  const CHANGELOG_PATH = path.join(rootDirectory, "CHANGELOG.md");
+  await fs.rm(CHANGELOG_PATH, { force: true });
+
+  // Parse the package file and
+  // - rename the application name
+  // - remove version
   const newPackageJson =
     JSON.stringify(
-      sort({ ...JSON.parse(packageJson), name: APP_NAME }),
+      sort({ ...JSON.parse(packageJson), name: APP_NAME, version: undefined }),
       null,
       2
     ) + "\n";
